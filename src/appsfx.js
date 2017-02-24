@@ -1,4 +1,4 @@
-define(["app/static", "htmlcomponent", "app/app"], function(static, htmlcomponent, main) {
-	htmlcomponent.setStaticLoader(static);
+define(["app/static", "htmlcomponent", "app/app"], function(staticComp, htmlcomponent, main) {
+	htmlcomponent.setStaticLoader(staticComp);
 	main.default();
 });
