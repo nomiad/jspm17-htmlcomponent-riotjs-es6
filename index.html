@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script scr="tags/app.tag" type="riot/tag"></script>
+</head>
+<body>
+	<div id="container">
+
+	</div>
+	<div data-hc="app/comp1">
+	</div>
+	<div data-hc="app/comp2">
+	</div>
+
+	<!-- riot tag -->
+	<app data-hc="app/app"></app>
+
+	<!-- -->
+	<script src="jspm_packages/system.js"></script>
+	<script src="jspm.config.js"></script>
+	<script>
+		SystemJS.import('htmlcomponent').then(function(htmlcomponent) {
+			htmlcomponent.query(document);
+			//main.default();
+		});
+	</script>
+	<!-- -->
+	<!-- <script src="build.js" charset="utf-8"></script> - - >
+	<script src="jspm_packages/system.js" charset="utf-8"></script>
+	<script src="jspm.config.js" charset="utf-8"></script>
+	<script>
+		System.import("app/app").then(function(main) {
+			main();
+		})
+	</script>
+	-->
+</body>
+</html>
