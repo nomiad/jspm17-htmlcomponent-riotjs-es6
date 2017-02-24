@@ -8,7 +8,6 @@ SystemJS.config({
   },
   browserConfig: {
     "baseURL": "."
-    }
   },
   devConfig: {
     "map": {
