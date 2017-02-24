@@ -1,9 +1,16 @@
 {
+  "name": "jspm17-htmlcomponent-riotjs-es6",
+  "version": "0.0.1",
+  "license": "MIT",
+
   "scripts": {
     "build": "jspm bundle app/app dist/bundle.js",
 		"build-watch": "jspm bundle app/app + app/static dist/bundle.js -wid",
 		"build-prod": "jspm build app/appsfx dist/build.js",
 		"postinstall": "jspm install"
+  },
+  "devDependencies": {
+    "jspm":"beta"
   },
   "jspm": {
     "name": "app",
