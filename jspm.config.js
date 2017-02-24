@@ -7,19 +7,7 @@ SystemJS.config({
     "app/": "src/"
   },
   browserConfig: {
-    "baseURL": ".",
-    "bundles": {
-      "build.js": [
-        "app/app.js",
-        "tags/app.tag!npm:jspm-riot@2.0.0/tag.js",
-        "npm:riot@3.2.1/riot.js",
-        "npm:riot@3.2.1.json",
-        "npm:jspm-nodelibs-process@0.2.0/process.js",
-        "npm:jspm-nodelibs-process@0.2.0.json",
-        "npm:jspm-riot@2.0.0.json",
-        "github:guavestudios/htmlcomponent@master/dist/htmlcomponent.min.js",
-        "github:guavestudios/htmlcomponent@master.json"
-      ]
+    "baseURL": "."
     }
   },
   devConfig: {

@@ -16,15 +16,14 @@
 	</div>
 
 	<!-- riot tag -->
-	<app data-hc="app/app"></app>
+	<app data-hc="app/riotcomp"></app>
 
 	<!-- -->
 	<script src="jspm_packages/system.js"></script>
 	<script src="jspm.config.js"></script>
 	<script>
-		SystemJS.import('htmlcomponent').then(function(htmlcomponent) {
-			htmlcomponent.query(document);
-			//main.default();
+		SystemJS.import('app/app').then(function(app) {
+			app.default();
 		});
 	</script>
 	<!-- -->

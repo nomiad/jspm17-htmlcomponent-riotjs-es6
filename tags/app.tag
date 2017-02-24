@@ -3,7 +3,7 @@
 
 	<script>
 		//import comp2 from 'app/comp1';
-		console.info("what else...");
+		console.info("what else... v1");
 		var test = "rulez";
 		this.html = `es6 ${test}`;
 	</script>

@@ -1,7 +1,9 @@
 {
   "scripts": {
     "build": "jspm bundle app/app dist/bundle.js",
-		"build-prod": "jspm bundle app/appsfx"
+		"build-watch": "jspm bundle app/app + app/static dist/bundle.js -wid",
+		"build-prod": "jspm build app/appsfx dist/build.js",
+		"postinstall": "jspm install"
   },
   "jspm": {
     "name": "app",
